@@ -1,76 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portafolio IA - Tu Nombre</title>
+
+<title>Portafolio IA</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f4f4f4;
+background:#f4f7fb;
+color:#333;
 }
 
 header{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:40px;
+background:linear-gradient(135deg,#0f172a,#2563eb);
+color:white;
+padding:80px 20px;
+text-align:center;
 }
 
-section{
-    max-width:1000px;
-    margin:auto;
-    padding:30px;
+header h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+header p{
+font-size:1.2rem;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    margin:20px 0;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:12px;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
-h2{
-    color:#0f172a;
+.card h2{
+margin-bottom:15px;
+color:#0f172a;
 }
 
-a{
-    color:#2563eb;
-    text-decoration:none;
+.project{
+border-left:5px solid #2563eb;
 }
+
+footer{
+text-align:center;
+padding:30px;
+background:#0f172a;
+color:white;
+margin-top:40px;
+}
+
 </style>
-
 </head>
+
 <body>
 
 <header>
-    <h1>Portafolio de Inteligencia Artificial</h1>
-    <p>Proyectos de Machine Learning, Automatización y Agentes IA</p>
+<h1>Portafolio de Inteligencia Artificial</h1>
+<p>Machine Learning · Automatización · Agentes IA</p>
 </header>
 
-<section>
+<div class="container">
 
 <div class="card">
-    <h2>Sobre mí</h2>
-    <p>
-        Estudiante de Inteligencia Artificial y Machine Learning.
-        Este portafolio reúne mis prácticas, proyectos y desarrollos
-        relacionados con automatización, análisis de datos y agentes IA.
-    </p>
+<h2>Sobre mí</h2>
+<p>
+Estudiante de Inteligencia Artificial y Machine Learning con interés en la automatización de procesos, análisis de datos y desarrollo de soluciones basadas en IA.
+</p>
 </div>
 
-<div class="card">
-    <h2>Proyecto 1 - Agente IA para lectura de PDF</h2>
-    <p>
-        Agente desarrollado en n8n capaz de leer documentos PDF,
-        extraer información y responder preguntas sobre el contenido.
-    </p>
+<div class="card project">
+<h2>Proyecto: Agente IA para análisis de PDF</h2>
+
+<p>
+Desarrollé un agente inteligente utilizando n8n y Google Gemini capaz de:
+</p>
+
+<br>
+
+<ul>
+<li>Leer documentos PDF automáticamente.</li>
+<li>Extraer el contenido del archivo.</li>
+<li>Responder preguntas en lenguaje natural.</li>
+<li>Generar resúmenes financieros automáticos.</li>
+</ul>
+
 </div>
 
-</section>
+</div>
+
+<footer>
+© 2026 - Portafolio IA
+</footer>
 
 </body>
 </html>
