@@ -5,67 +5,108 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portafolio IA</title>
+<title>Portafolio IA - Michael Maldonado</title>
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#f4f7fb;
-color:#333;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
 }
 
 header{
-background:linear-gradient(135deg,#0f172a,#2563eb);
-color:white;
-padding:80px 20px;
-text-align:center;
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
 }
 
 header h1{
-font-size:3rem;
-margin-bottom:15px;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header h2{
+    font-weight:normal;
+    margin-bottom:15px;
 }
 
 header p{
-font-size:1.2rem;
+    font-size:1.1rem;
 }
 
 .container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
 }
 
 .card{
-background:white;
-padding:25px;
-margin-bottom:25px;
-border-radius:12px;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
+    background:white;
+    padding:30px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
 .card h2{
-margin-bottom:15px;
-color:#0f172a;
+    color:#0f172a;
+    margin-bottom:15px;
 }
 
 .project{
-border-left:5px solid #2563eb;
+    border-left:6px solid #2563eb;
+}
+
+.tech{
+    display:inline-block;
+    background:#e8f0ff;
+    color:#2563eb;
+    padding:8px 12px;
+    margin:5px;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+ul{
+    margin-left:25px;
 }
 
 footer{
-text-align:center;
-padding:30px;
-background:#0f172a;
-color:white;
-margin-top:40px;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+hr{
+    margin:30px 0;
+    border:none;
+    border-top:1px solid #ddd;
 }
 
 </style>
@@ -74,20 +115,45 @@ margin-top:40px;
 <body>
 
 <header>
+
 <h1>Portafolio de Inteligencia Artificial</h1>
-<p>Machine Learning · Automatización · Agentes IA</p>
+
+<h2>Michael Maldonado</h2>
+
+<p>
+Proyectos desarrollados en Inteligencia Artificial,
+Machine Learning, Automatización y Análisis de Datos.
+</p>
+
 </header>
 
 <div class="container">
 
 <div class="card">
+
 <h2>Sobre mí</h2>
+
 <p>
-Soy estudiante de Inteligencia Artificial y Machine Learning. Me apasiona la automatización de procesos con n8n, el análisis de datos y la creación de agentes inteligentes capaces de resolver problemas empresariales.
+Soy estudiante de Inteligencia Artificial y Machine Learning.
+Me interesa la automatización de procesos empresariales,
+el análisis de datos y la creación de agentes inteligentes
+capaces de apoyar la toma de decisiones.
 </p>
+
 </div>
 
-<div class="card project">
+<div class="card">
+
+<h2>Mis Proyectos</h2>
+
+<p>
+En esta sección presento algunos proyectos desarrollados durante mi proceso de formación en Inteligencia Artificial y Automatización.
+</p>
+
+<hr>
+
+<div class="project">
+
 <h2>Proyecto 1: Asistente Financiero con IA usando n8n y Gemini</h2>
 
 <p>
@@ -96,31 +162,44 @@ Desarrollé un asistente financiero basado en Inteligencia Artificial capaz de a
 
 <br>
 
-<p><strong>Problema:</strong></p>
+<h3>Problema</h3>
 
 <p>
-Los estados financieros suelen contener gran cantidad de información y requieren tiempo para identificar indicadores clave como ingresos, gastos y pérdidas.
+Los estados financieros suelen contener una gran cantidad de información y requieren tiempo para identificar indicadores clave como ingresos, costos, gastos y pérdidas.
 </p>
 
 <br>
 
-<p><strong>Solución:</strong></p>
+<h3>Solución</h3>
 
 <p>
-Se implementó un agente de IA en n8n que lee automáticamente documentos PDF, extrae su contenido y responde preguntas específicas utilizando Google Gemini.
+Se implementó un flujo de automatización en n8n que permite leer documentos PDF, extraer automáticamente su contenido y utilizar Google Gemini para responder preguntas sobre la información financiera.
 </p>
 
 <br>
 
-<p><strong>Resultados obtenidos:</strong></p>
+<h3>Funcionalidades</h3>
+
+<ul>
+<li>Lectura automática de documentos PDF.</li>
+<li>Extracción de texto desde archivos financieros.</li>
+<li>Análisis de estados financieros.</li>
+<li>Generación de resúmenes automáticos.</li>
+<li>Respuesta a preguntas en lenguaje natural.</li>
+<li>Identificación de ingresos, gastos y pérdidas.</li>
+</ul>
 
 <br>
 
-<p><strong>Evidencia:</strong></p>
+<h3>Resultados obtenidos</h3>
 
 <p>
-Durante las pruebas, el asistente respondió correctamente preguntas como:
+El agente respondió correctamente preguntas relacionadas con la pérdida neta del ejercicio, ingresos totales, estructura financiera y contenido general del documento analizado.
 </p>
+
+<br>
+
+<h3>Evidencia de funcionamiento</h3>
 
 <ul>
 <li>¿Cuál fue la pérdida neta del ejercicio?</li>
@@ -128,43 +207,32 @@ Durante las pruebas, el asistente respondió correctamente preguntas como:
 <li>¿Qué información contiene el estado financiero?</li>
 </ul>
 
-<p>
-El agente fue capaz de responder correctamente preguntas relacionadas con ingresos, costos, gastos y pérdida neta del ejercicio financiero, utilizando exclusivamente la información contenida en el documento analizado.
-</p>
-  
 <br>
 
-<ul>
-<li>Leer documentos PDF automáticamente.</li>
-<li>Extraer el contenido del archivo.</li>
-<li>Responder preguntas en lenguaje natural.</li>
-<li>Generar resúmenes financieros automáticos.</li>
-<li>Responder preguntas sobre estados financieros.</li>
-<li>Analizar ingresos, gastos y pérdidas de una empresa.</li>
-</ul>
+<h3>Tecnologías utilizadas</h3>
+
+<span class="tech">n8n</span>
+<span class="tech">Google Gemini</span>
+<span class="tech">Prompt Engineering</span>
+<span class="tech">PDF Extract</span>
+<span class="tech">Automatización</span>
+<span class="tech">IA Generativa</span>
 
 <br>
 
-<a href="https://traficosociodigital.github.io/portafolio-ia/"
-target="_blank"
-style="background:#2563eb;color:white;padding:10px 20px;border-radius:8px;text-decoration:none;">
+<a class="btn" href="https://traficosociodigital.github.io/portafolio-ia/" target="_blank">
 Ver Proyecto
 </a>
 
-<br>
-
-<p><strong>Tecnologías utilizadas:</strong></p>
-
-<p>
-n8n · Google Gemini · PDF Extract · Automatización de flujos · Inteligencia Artificial Generativa
-</p>
-  
 </div>
 
 </div>
 
 <footer>
-© 2026 - Portafolio IA
+
+<p>© 2026 Michael Maldonado</p>
+<p>Portafolio Académico de Inteligencia Artificial y Machine Learning</p>
+
 </footer>
 
 </body>
