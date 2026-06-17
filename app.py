@@ -13,19 +13,21 @@ archivo = st.file_uploader(
 if archivo is not None:
     df = pd.read_csv(archivo)
 
+    st.write(df.columns)
+
     # Calcular ventas
     df["Venta"] = df["Cantidad"] * df["Precio"]
 
     # KPIs
     ventas_totales = df["Venta"].sum()
     productos_vendidos = df["Cantidad"].sum()
-    ciudades = df["Ciudad"].nunique()
+    clientes = df["Cliente"].nunique()
 
     col1, col2, col3 = st.columns(3)
 
     col1.metric("Ventas Totales", f"${ventas_totales:,.0f}")
     col2.metric("Productos Vendidos", productos_vendidos)
-    col3.metric("Ciudades", ciudades)
+    col3.metric("Clientes", clientes)
 
     st.divider()
 
@@ -34,15 +36,6 @@ if archivo is not None:
 
     st.divider()
 
-    st.subheader("Ventas por Ciudad")
-
-    ventas_ciudad = (
-        df.groupby("Ciudad")["Venta"]
-        .sum()
-        .sort_values(ascending=False)
-    )
-
-    st.bar_chart(ventas_ciudad)
 
     st.subheader("Ventas por Categoría")
 
