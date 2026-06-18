@@ -17,6 +17,15 @@ if archivo is not None:
 
     # Calcular ventas
     df["Venta"] = df["Cantidad"] * df["Precio"]
+    st.sidebar.header("Filtros")
+
+categoria = st.sidebar.selectbox(
+    "Categoría",
+    ["Todas"] + list(df["Categoria"].unique())
+)
+
+if categoria != "Todas":
+    df = df[df["Categoria"] == categoria]
 
     # KPIs
     ventas_totales = df["Venta"].sum()
