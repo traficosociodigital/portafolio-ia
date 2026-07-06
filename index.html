@@ -1,238 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portafolio IA - Michael Maldonado</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+    <title>Michael Maldonado | Portafolio IA</title>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <link rel="stylesheet" href="estilos.css">
 
-body{
-    background:#f4f7fb;
-    color:#333;
-    line-height:1.6;
-}
-
-header{
-    background:linear-gradient(135deg,#0f172a,#2563eb);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-}
-
-header h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-header h2{
-    font-weight:normal;
-    margin-bottom:15px;
-}
-
-header p{
-    font-size:1.1rem;
-}
-
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.card{
-    background:white;
-    padding:30px;
-    margin-bottom:25px;
-    border-radius:12px;
-    box-shadow:0 3px 12px rgba(0,0,0,.08);
-}
-
-.card h2{
-    color:#0f172a;
-    margin-bottom:15px;
-}
-
-.project{
-    border-left:6px solid #2563eb;
-}
-
-.tech{
-    display:inline-block;
-    background:#e8f0ff;
-    color:#2563eb;
-    padding:8px 12px;
-    margin:5px;
-    border-radius:8px;
-    font-size:14px;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#2563eb;
-    color:white;
-    padding:12px 20px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.btn:hover{
-    opacity:0.9;
-}
-
-ul{
-    margin-left:25px;
-}
-
-footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:30px;
-    margin-top:40px;
-}
-
-hr{
-    margin:30px 0;
-    border:none;
-    border-top:1px solid #ddd;
-}
-
-</style>
 </head>
 
 <body>
 
 <header>
 
-<h1>Portafolio de Inteligencia Artificial</h1>
+    <h1>Michael Maldonado</h1>
 
-<h2>Michael Maldonado</h2>
+    <h2>Inteligencia Artificial • Machine Learning • Automatización</h2>
 
-<p>
-Proyectos desarrollados en Inteligencia Artificial,
-Machine Learning, Automatización y Análisis de Datos.
-</p>
+    <p>
+        Bienvenido a mi portafolio profesional. Aquí encontrarás algunos de los proyectos
+        desarrollados durante mi formación en Inteligencia Artificial, Ciencia de Datos y
+        Automatización de Procesos.
+    </p>
 
 </header>
 
 <div class="container">
 
-<div class="card">
+    <div class="card">
 
-<h2>Sobre mí</h2>
+        <h2>👨‍💻 Sobre mí</h2>
 
-<p>
-Soy estudiante de Inteligencia Artificial y Machine Learning.
-Me interesa la automatización de procesos empresariales,
-el análisis de datos y la creación de agentes inteligentes
-capaces de apoyar la toma de decisiones.
-</p>
+        <p>
+            Soy estudiante de Inteligencia Artificial y Machine Learning.
+            Me interesa la automatización de procesos empresariales,
+            el análisis de datos y la creación de agentes inteligentes
+            capaces de apoyar la toma de decisiones mediante el uso
+            de modelos de IA y herramientas modernas de desarrollo.
+        </p>
 
-</div>
+    </div>
 
-<div class="card">
+    <div class="card">
 
-<h2>Mis Proyectos</h2>
+        <h2>🚀 Mis Proyectos</h2>
 
-<p>
-En esta sección presento algunos proyectos desarrollados durante mi proceso de formación en Inteligencia Artificial y Automatización.
-</p>
+        <div class="projects">
 
-<hr>
+            <div class="project">
 
-<div class="project">
+                <div class="project-content">
 
-<h2>Proyecto 1: Asistente Financiero con IA usando n8n y Gemini</h2>
+                    <h3>🤖 Asistente Financiero con IA</h3>
 
-<p>
-Desarrollé un asistente financiero basado en Inteligencia Artificial capaz de analizar estados financieros en formato PDF y responder preguntas en lenguaje natural utilizando información real contenida en los documentos.
-</p>
+                    <p>
+                        Automatización para analizar estados financieros
+                        utilizando n8n y Google Gemini.
+                    </p>
 
-<br>
+                    <a class="btn" href="proyecto1.html">
+                        Ver Proyecto
+                    </a>
 
-<h3>Problema</h3>
+                </div>
 
-<p>
-Los estados financieros suelen contener una gran cantidad de información y requieren tiempo para identificar indicadores clave como ingresos, costos, gastos y pérdidas.
-</p>
+            </div>
 
-<br>
+            <div class="project">
 
-<h3>Solución</h3>
+                <div class="project-content">
 
-<p>
-Se implementó un flujo de automatización en n8n que permite leer documentos PDF, extraer automáticamente su contenido y utilizar Google Gemini para responder preguntas sobre la información financiera.
-</p>
+                    <h3>📊 Dashboard de Ventas</h3>
 
-<br>
+                    <p>
+                        Dashboard interactivo desarrollado con
+                        Python, Pandas y Streamlit para analizar
+                        información comercial.
+                    </p>
 
-<h3>Funcionalidades</h3>
+                    <a class="btn" href="proyecto2.html">
+                        Ver Proyecto
+                    </a>
 
-<ul>
-<li>Lectura automática de documentos PDF.</li>
-<li>Extracción de texto desde archivos financieros.</li>
-<li>Análisis de estados financieros.</li>
-<li>Generación de resúmenes automáticos.</li>
-<li>Respuesta a preguntas en lenguaje natural.</li>
-<li>Identificación de ingresos, gastos y pérdidas.</li>
-</ul>
+                </div>
 
-<br>
+            </div>
 
-<h3>Resultados obtenidos</h3>
+        </div>
 
-<p>
-El agente respondió correctamente preguntas relacionadas con la pérdida neta del ejercicio, ingresos totales, estructura financiera y contenido general del documento analizado.
-</p>
+    </div>
 
-<br>
+    <div class="card">
 
-<h3>Evidencia de funcionamiento</h3>
+        <h2>🛠 Tecnologías</h2>
 
-<ul>
-<li>¿Cuál fue la pérdida neta del ejercicio?</li>
-<li>¿Cuánto fue el ingreso total?</li>
-<li>¿Qué información contiene el estado financiero?</li>
-</ul>
+        <span class="tech">Python</span>
+        <span class="tech">Pandas</span>
+        <span class="tech">Streamlit</span>
+        <span class="tech">Git</span>
+        <span class="tech">GitHub</span>
+        <span class="tech">Machine Learning</span>
+        <span class="tech">n8n</span>
+        <span class="tech">Google Gemini</span>
 
-<br>
-
-<h3>Tecnologías utilizadas</h3>
-
-<span class="tech">n8n</span>
-<span class="tech">Google Gemini</span>
-<span class="tech">Prompt Engineering</span>
-<span class="tech">PDF Extract</span>
-<span class="tech">Automatización</span>
-<span class="tech">IA Generativa</span>
-
-<div style="margin:25px 0;">
-    <a class="btn" href="https://traficosociodigital.github.io/portafolio-ia/" target="_blank">
-        Ver Proyecto
-    </a>
-    
-</div>
-
-</div>
+    </div>
 
 </div>
 
 <footer>
 
-<p>© 2026 Michael Maldonado</p>
-<p>Portafolio Académico de Inteligencia Artificial y Machine Learning</p>
+    <p>© 2026 Michael Maldonado</p>
+
+    <p>Portafolio Profesional de Inteligencia Artificial</p>
 
 </footer>
 
