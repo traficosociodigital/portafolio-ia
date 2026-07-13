@@ -219,3 +219,37 @@ nav a{
 nav a:hover{
     color:#2563eb;
 }
+/* ==========================
+   Galería de imágenes
+========================== */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.imagen{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.imagen img{
+    width:100%;
+    display:block;
+    transition:.3s;
+}
+
+.imagen img:hover{
+    transform:scale(1.02);
+}
+
+.imagen p{
+    padding:15px;
+    text-align:center;
+    font-size:15px;
+    color:#555;
+}
